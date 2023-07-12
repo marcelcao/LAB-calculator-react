@@ -1,17 +1,11 @@
-function Home() {
+export default function Calculator() {
   return (
-    <div
-      className="text-center d-flex flex-column justify-content-center align-content-center"
-      style={{
-        height: '90vh',
-        padding: '30px',
-        maxWidth: '400px',
-        margin: '0 auto',
-      }}
-    >
-      <h1>Welcome Home!</h1>
+    <div className="appContainer">
+      <div className="calcContainer">
+        <div className="display">something here</div>
+        <div className="operators">something here</div>
+        <div className="numbers">something here</div>
+      </div>
     </div>
   );
 }
-
-export default Home;
