@@ -1,19 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Display({ result }) {
+export default function Display({ value }) {
   return (
-    <>
-      <div className="calc-display">
-        <h1 className="display-result">{result}</h1>
-      </div>
-    </>
+    <input value={value} readOnly className="display-result" />
   );
 }
 
 Display.propTypes = {
-  result: PropTypes.string,
-};
-Display.defaultProps = {
-  result: '0',
+  value: PropTypes.string.isRequired,
 };
