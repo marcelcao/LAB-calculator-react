@@ -21,8 +21,31 @@ body {
 }
 
 .display-result {
-  text-align: right;
+  width: 100%;
   background-color: black;
+  background-size: 100% cover;
+  height: 50px;
+  border: 0px solid black;
   color: white;
-  font-size: small;
+  font-weight: bold;
+  text-align: right;
+  font-size: xx-large;
+}
+
+button {
+  font-family:'Courier New', Courier, monospace;
+  font-size: xx-large;
+  font-weight: bold;
+  border: 2px;
+  border-color: black;
+}
+
+
+.btn-grp {
+  grid-column: 1 / span 4;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px;
+  border-color: black;
 }

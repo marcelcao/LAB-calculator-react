@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Button({ value, onClick }) {
+export default function Button({ value, onClick, color }) {
   return (
     <button
       type="button"
       onClick={onClick}
+      style={{ backgroundColor: color }}
     >
       {value}
     </button>
@@ -13,6 +14,7 @@ export default function Button({ value, onClick }) {
 }
 
 Button.propTypes = PropTypes.shape({
-  value: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  value: PropTypes.string,
+  onClick: PropTypes.func,
+  color: PropTypes.string,
 }).isRequired;
